@@ -48,7 +48,9 @@ export const Header = ({ lang }: IHeader) => {
       <nav className={isFixed ? 'fixed shadow-lg top-0 left-0 w-full z-[1001] bg-white' : ''}>
         <div className="flex container justify-between gap-5 py-3 items-center">
           <div className="flex gap-7 items-center">
-            <h1 className="font-bold text-2xl text-primary">MEGABOX</h1>
+            <LocaleLink href="/">
+              <span className="font-bold text-2xl text-primary">MEGABOX</span>
+            </LocaleLink>
             <Button
               color="primary"
               onClick={() => setIsCatalogOpen((prev) => !prev)}
@@ -85,6 +87,7 @@ export const Header = ({ lang }: IHeader) => {
               <li
                 key={idx}
                 className={`flex ${classes} text-sm font-semibold cursor-pointer flex-col gap-1 items-center justify-center`}
+                onClick={() => (key == 'signIn' ? console.log('Open') : console.log('Close'))}
               >
                 <Image
                   src={icon.src}
