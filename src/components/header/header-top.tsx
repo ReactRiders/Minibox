@@ -2,7 +2,8 @@
 
 import { LocaleSwitcher } from '@/components';
 import { call_icon, location_icon } from '@/mock';
-import { IHeaderTop } from '@/types';
+import { headerJoinData } from '@/mock/header.data';
+import { IHeaderJoin, IHeaderTop } from '@/types';
 
 import { Image } from '@nextui-org/react';
 import { useTranslations } from 'next-intl';
@@ -13,8 +14,19 @@ export const HeaderTop = ({ data }: { data: IHeaderTop[] }) => {
   return (
     <div className="hidden lg:flex items-center justify-between gap-7">
       <div className="flex items-center gap-7 text-xs text-gray-600">
+        <div className="flex items-center gap-2">
+          <p>{t('join')}</p>
+          {headerJoinData.map((el: IHeaderJoin) => (
+            <Image
+              className="w-5 h-5 cursor-pointer"
+              key={el?.id}
+              src={el.icon?.src}
+              alt=""
+            />
+          ))}
+        </div>
         <a
-          href="tel:+998883521214"
+          href="tel:+998990149998"
           className="flex items-center gap-1"
         >
           <Image
@@ -22,7 +34,7 @@ export const HeaderTop = ({ data }: { data: IHeaderTop[] }) => {
             alt="call icon"
             className="w-4"
           />
-          <span>+998 88 352 12 14</span>
+          <span>+998 (99) 014 99 98</span>
         </a>
         <a
           className="flex items-center gap-1"

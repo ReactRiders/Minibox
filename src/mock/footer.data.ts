@@ -8,25 +8,6 @@ export const footer_data = [
       { listName: 'our_stores', link: '#' },
     ],
   },
-  {
-    title: 'services',
-    footerlist: [
-      { listName: 'payment_methods', link: '#' },
-      { listName: 'on_term_payment', link: '#' },
-      { listName: 'collaboration', link: '#' },
-      { listName: 'return_order', link: '#' },
-    ],
-  },
-  {
-    title: 'for_customers',
-    footerlist: [
-      { listName: 'delivery', link: '#' },
-      { listName: 'contact_us', link: '#' },
-      { listName: 'services_center', link: '#' },
-      { listName: 'leave_a_comment', link: '#' },
-      { listName: 'vacancies', link: '#' },
-    ],
-  },
 ];
 
 export const paymentMethod = [

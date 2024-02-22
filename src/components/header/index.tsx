@@ -75,11 +75,7 @@ export const Header = ({ lang }: IHeader) => {
                   color="primary"
                   size="lg"
                 >
-                  <Image
-                    src={search_icon.src}
-                    alt="search icon"
-                    className="w-6 invert"
-                  />
+                  {t('searching')}
                 </Button>
               }
             />
