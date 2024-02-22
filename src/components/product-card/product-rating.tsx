@@ -23,6 +23,7 @@ const StarRating = ({ rating }: IStarRating) => {
     for (let i = 0; i < fullStarCount; i++) {
       stars.push(
         <Image
+          className="w-5 h-5"
           key={i}
           src={full_star?.src}
           alt="full star"
@@ -33,6 +34,7 @@ const StarRating = ({ rating }: IStarRating) => {
     if (restStar >= 0.25 && restStar <= 0.5) {
       stars.push(
         <Image
+          className="w-5 h-5"
           key="half"
           src={half_star?.src}
           alt="half star"
@@ -41,6 +43,7 @@ const StarRating = ({ rating }: IStarRating) => {
     } else if (restStar > 0.5) {
       stars.push(
         <Image
+          className="w-5 h-5"
           key="full"
           src={full_star?.src}
           alt="full star"
@@ -51,6 +54,7 @@ const StarRating = ({ rating }: IStarRating) => {
     for (let i = 0; i < freeStarCount; i++) {
       stars.push(
         <Image
+          className="w-5 h-5"
           key={`empty-${i}`}
           src={free_star?.src}
           alt="empty star"

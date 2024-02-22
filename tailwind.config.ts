@@ -13,10 +13,12 @@ const config: Config = {
     extend: {
       colors: {
         'muted': '#6C7178',
-        'primary': '#D92E15',
+        'light-gray': '#F8F8F9',
+        'primary': '#ffbf33',
         'secondary': '#1D242F',
         'transparent': 'rgba(255, 255, 255, 0)',
         'text-color': '#0B2B5E',
+        'light-green': 'rgba(79,243,67,0.87)',
       },
       fontSize: {
         'xs': '0.75rem',

@@ -50,43 +50,37 @@ export const ProductCard: FC<IProduct> = (props) => {
           <Image
             isZoomed
             alt="Card background"
-            className="object-cover rounded-xl"
-            src="https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-08/all-in-one-product-image-transparent-background.png.rendition.intel.web.576.324.png"
+            className="object-contain rounded-xl"
+            src="https://image.minibox.uz/uploads/photos_1707245921053.jpeg"
             width={290}
             height={300}
           />
         </CardHeader>
         <CardBody className="overflow-visible py-2">
-          <p className="text-medium  font-bold">{priceFormat(+price)} so'm</p>
-          <Button
-            color="secondary"
-            variant="bordered"
-            size="sm"
-            className="mt-1"
-          >
-            {priceFormat(parseInt(String(monthlyPrice)))} soʻmdan/oyiga
-          </Button>
-          <Tooltip
-            key={1}
-            showArrow={true}
-            color="foreground"
-            content="Ushbu mahsulotni xarid qilsangiz MediaClub bonus hisobingizga 300 690 gacha bonusga ega bo'lasiz/oyiga"
-            className="capitalize max-w-52"
-          >
-            <Chip
-              color="warning"
-              variant="dot"
-              className="mt-2 border-none"
-            >
-              <small className="text-default-500">+ {priceFormat(+bonusPrise)} so'm bonus</small>
-            </Chip>
-          </Tooltip>
-          <p className="font-sans text-gray-500 leading-[150%] break-all line-clamp-2 mt-3">
+          <p className="text-muted">Smartfon</p>
+          <p className="font-sans text-black leading-[150%] break-all line-clamp-2 mt-3">
             {productName?.ru}
           </p>
           <div className="mt-3">
             <StarRating rating={3.5} />
           </div>
+          <Button
+            color="secondary"
+            variant="bordered"
+            size="md"
+            className="mt-1 font-bold bg-light-gray flex items-center justify-center"
+          >
+            {priceFormat(parseInt(String(monthlyPrice)))}$ dan/oyiga
+          </Button>
+
+          <Chip
+            color="warning"
+            variant="dot"
+            className="mt-2 border-none flex items-center gap-2"
+          >
+            <small className="text-gray-400 line-through">{priceFormat(+bonusPrise)}$</small>
+            <small className="ml-3 text-black">{priceFormat(+price)}$</small>
+          </Chip>
           <Button
             color="primary"
             variant="shadow"

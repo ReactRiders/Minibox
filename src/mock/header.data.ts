@@ -1,5 +1,8 @@
 import { basket_icon, heart_icon, user_icon, home_icon } from '@/mock';
-import { IHeaderTop, ITopCategories } from '@/types';
+import { IHeaderJoin, IHeaderTop } from '@/types';
+
+import instagram from '../../public/icons/instagram.svg';
+import telegram from '../../public/icons/telegram.svg';
 
 interface IHeaderLink {
   key: string;
@@ -27,3 +30,14 @@ export const headerData: IHeaderData = {
     { key: 'signIn', icon: user_icon, url: '/profile' },
   ],
 };
+
+export const headerJoinData: IHeaderJoin[] = [
+  {
+    id: '1',
+    icon: telegram,
+  },
+  {
+    id: '2',
+    icon: instagram,
+  },
+];

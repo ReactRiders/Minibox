@@ -7,12 +7,14 @@
     "cart": "Savat",
     "favorites": "Saralanganlar",
     "login": "Kirish",
-    "catalog": "Katalog",
+    "catalog": "Kategoriyalar",
     "search": "Mahsulotlarni qidirish",
+    "searching": "Izlash",
     "basket": "Savatcha",
     "favourites": "Saralanganlar",
     "signIn": "Kirish",
-    "home": "Bosh sahifa"
+    "home": "Bosh sahifa",
+    "join": "Bizga qo'shiling:"
   },
   "top-categories": {
     "refrigerators": "Muzlatgichlar",
@@ -29,10 +31,10 @@
     "blenders": "Blenderlar"
   },
   "footer-link": {
-    "questions": "Savollaringiz boʻlsa, javob berishga tayyormiz!",
+    "questions": "Sizda savol bormi? Unda bizga qo'ng'iroq qiling",
     "time": "Ish vaqti:",
     "everyday": "Har kuni : 09:00 - 21:00",
-    "data": "Maʼlumot",
+    "data": "Mijozlar uchun",
     "about": "Biz haqimizda",
     "guarantee": "Kafolat",
     "actions": "Aksiyalar",

@@ -4,20 +4,20 @@ import { Image } from '@nextui-org/react';
 
 interface IPopularCategoryCard {
   text: string;
-  icon: { src: string };
+  icon: string;
 }
 
 export const PopularCategoryCard: FC<IPopularCategoryCard> = ({ text = 'Televizorlar', icon }) => {
   return (
-    <div className="flex min-w-52 gap-3 p-3 h-full items-center border rounded-xl">
-      <div className="w-14 h-14 flex items-center justify-center bg-pink-100 p-3 rounded-xl">
+    <div className="flex min-w-48 bg-light-gray gap-3 p-3 h-full items-start flex-col  rounded-3xl overflow-hidden cursor-pointer">
+      <p className="line-clamp-2 mt-2 leading-5 font-semibold text-black">{text}</p>
+      <div className="flex items-center justify-center  rounded-xl">
         <Image
-          className="rounded-none"
-          src={icon.src}
+          className="rounded-none w-36 h-24 ml-24 object-contain"
+          src={icon}
           alt="popular-category icon"
         />
       </div>
-      <p className="line-clamp-2 leading-5 font-semibold text-muted">{text}</p>
     </div>
   );
 };

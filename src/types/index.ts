@@ -16,6 +16,11 @@ export interface IHeaderTop {
   url: string;
 }
 
+export interface IHeaderJoin {
+  id?: string;
+  icon: { src: string };
+}
+
 export interface ITopCategories {
   key: string;
   url: string;
