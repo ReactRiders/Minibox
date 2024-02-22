@@ -9,7 +9,7 @@ export const Banner: FC<ISlide> = (props) => {
   return (
     <div className="w-full h-full">
       <Image
-        className="w-full h-full rounded-md"
+        className="w-full h-full"
         src={url}
         alt="banner-img"
       />

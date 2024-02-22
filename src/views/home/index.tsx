@@ -1,13 +1,6 @@
 'use client';
 
-import {
-  About_applications,
-  Banner,
-  BrandCard,
-  PopularCategoryCard,
-  ProductCard,
-  Slider,
-} from '@/components';
+import { Banner, Slider, BrandCard, ProductCard, PopularCategoryCard } from '@/components';
 import { productData, popularCategoriesData, bannerData } from '@/mock';
 import { brandData, popularBrandData } from '@/mock/slider.data';
 import { IPageParams } from '@/types';
@@ -24,6 +17,7 @@ export const HomePage = ({ lang }: IHomePage) => {
       <Slider
         component={Banner}
         childClass=""
+        parentClass="rounded-xl overflow-hidden my-6"
         sliderData={bannerData}
         items={{ desktop: 1, tablet: 1, mobile: 1 }}
       />
