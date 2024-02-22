@@ -3,7 +3,6 @@
 import { HeaderTop } from '@/components/header/header-top';
 import { TopCategories } from '@/components/top-categories';
 import { useLocaleLink } from '@/hooks/locale-link';
-import { search_icon } from '@/mock';
 import { headerData } from '@/mock/header.data';
 import { topCategories } from '@/mock/top-categories.data';
 import { TLocale } from '@/types';
@@ -46,7 +45,7 @@ export const Header = ({ lang }: IHeader) => {
     <header className="container">
       <HeaderTop data={headerData.headerTop} />
       <nav className={isFixed ? 'fixed shadow-lg top-0 left-0 w-full z-[1001] bg-white' : ''}>
-        <div className="flex container justify-between gap-5 py-3 items-center">
+        <div className={`${isFixed && 'container'} flex justify-between gap-5 py-3 items-center`}>
           <div className="flex gap-7 items-center">
             <h1 className="font-bold text-2xl text-primary">MEGABOX</h1>
             <Button
