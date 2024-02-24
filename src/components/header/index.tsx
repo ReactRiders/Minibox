@@ -115,10 +115,10 @@ export const Header = ({ lang }: IHeader) => {
         </div>
       </nav>
       <MobileNav lang={lang} />
-      <TopCategories
-        isFixed={isFixed}
-        data={topCategories}
-      />
+      {/*<TopCategories*/}
+      {/*  isFixed={isFixed}*/}
+      {/*  data={topCategories}*/}
+      {/*/>*/}
     </header>
   );
 };

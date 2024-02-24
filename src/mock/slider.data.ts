@@ -1,3 +1,4 @@
+import icons from '@/icons/check-file.svg';
 import {
   laptop_icon,
   phone_icon,
@@ -11,8 +12,13 @@ export interface ISlide {
   url: string;
 }
 
-export interface ISliderBrands {
+export interface IMiniBanner {
   url: string;
+  imageUrl: string;
+}
+
+export interface ISliderBrands {
+  url: { src: string };
   title: string;
   description: string;
 }
@@ -69,43 +75,43 @@ export const bannerData: ISlide[] = [
 
 export const brandData: ISliderBrands[] = [
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Muddatli to'lovga sotib olish",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
   },
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Butun O'zbekiston bo'ylab doʻkonlar",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
   },
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Butun O'zbekiston bo'ylab doʻkonlar",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
   },
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Butun O'zbekiston bo'ylab doʻkonlar",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
   },
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Butun O'zbekiston bo'ylab doʻkonlar",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
   },
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Butun O'zbekiston bo'ylab doʻkonlar",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
   },
   {
-    url: 'https://mediapark.uz/svg/tool.svg',
+    url: icons,
     title: "Butun O'zbekiston bo'ylab doʻkonlar",
     description:
       'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',

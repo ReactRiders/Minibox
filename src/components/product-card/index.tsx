@@ -24,7 +24,7 @@ export const ProductCard: FC<IProduct> = (props) => {
   console.log(liked);
   return (
     <div>
-      <Card className="border border-border-color hover:border-gray-200 relative overflow-hidden group shadow-md">
+      <Card className="border border-border-color rounded-[12px] hover:border-gray-200 relative overflow-hidden group shadow-md">
         <CardHeader className="flex-col items-start rounded-none p-0">
           <Image
             alt="Card background"

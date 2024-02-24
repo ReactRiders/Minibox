@@ -9,7 +9,7 @@ export const BrandCard: FC<ISliderBrands> = ({ url, title, description }) => {
     <div className="rounded-xl border p-5 flex items-center justify-center flex-col">
       <Image
         alt="NextUI Fruit Image with Zoom"
-        src={url}
+        src={url.src}
         className={title && description ? 'w-14 h-14 bg-primary py-3 rounded-full' : ''}
       />
       {title && description && (

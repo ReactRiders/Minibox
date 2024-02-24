@@ -1,8 +1,16 @@
 'use client';
 
-import { Banner, Slider, BrandCard, ProductCard, PopularCategoryCard } from '@/components';
+import {
+  Banner,
+  Slider,
+  BrandCard,
+  ProductCard,
+  PopularCategoryCard,
+  MiniBanner,
+} from '@/components';
 import { productData, popularCategoriesData, bannerData } from '@/mock';
-import { brandData, popularBrandData } from '@/mock/slider.data';
+import { mockMiniBannerData } from '@/mock/mini-banner.data';
+import { brandData, IMiniBanner, popularBrandData } from '@/mock/slider.data';
 import { IPageParams } from '@/types';
 
 import { Button, Chip, Image } from '@nextui-org/react';
@@ -123,13 +131,21 @@ export const HomePage = ({ lang }: IHomePage) => {
         sliderData={productData}
         items={{ desktop: 5, tablet: 3, mobile: 2 }}
       />
-      <Slider
-        component={Banner}
-        childClass=""
-        parentClass="rounded-3xl overflow-hidden my-6"
-        sliderData={bannerData}
-        items={{ desktop: 1, tablet: 1, mobile: 1 }}
-      />
+      {/*<Slider*/}
+      {/*  component={Banner}*/}
+      {/*  childClass=""*/}
+      {/*  parentClass="rounded-3xl overflow-hidden my-6"*/}
+      {/*  sliderData={bannerData}*/}
+      {/*  items={{ desktop: 1, tablet: 1, mobile: 1 }}*/}
+      {/*/>*/}
+      <div className="flex items-center justify-between gap-4 mt-20 flex-col md:flex-row">
+        {mockMiniBannerData?.map((el: IMiniBanner) => (
+          <MiniBanner
+            key={el?.url}
+            {...el}
+          />
+        ))}
+      </div>
       <div className="flex items-center justify-between mt-20">
         <p className="font-bold text-2xl">Noutbuk mahsulotlari</p>
         <Button className="bg-light-gray">

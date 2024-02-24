@@ -32,23 +32,23 @@ export const Footer = ({ lang }: IFooter) => {
             >
               +998 71 203 33 33
             </a>
-            <div className="flex gap-4">
-              {imgLogo.map((item, index: number) => {
-                return (
-                  <a
-                    className="flex justify-center items-center rounded-full w-9"
-                    key={index}
-                    href={item.link}
-                  >
-                    <Image
-                      className="bg-white rounded-full w-9"
-                      src={item.img.src}
-                      alt="image"
-                    />
-                  </a>
-                );
-              })}
-            </div>
+            {/*<div className="flex gap-4">*/}
+            {/*  {imgLogo.map((item, index: number) => {*/}
+            {/*    return (*/}
+            {/*      <a*/}
+            {/*        className="flex justify-center items-center rounded-full w-9"*/}
+            {/*        key={index}*/}
+            {/*        href={item.link}*/}
+            {/*      >*/}
+            {/*        <Image*/}
+            {/*          className="bg-white rounded-full w-9"*/}
+            {/*          src={item.img.src}*/}
+            {/*          alt="image"*/}
+            {/*        />*/}
+            {/*      </a>*/}
+            {/*    );*/}
+            {/*  })}*/}
+            {/*</div>*/}
           </div>
           <div className="w-full text-white ">
             <h1 className="text-base font-semibold text-white cursor-pointer mb-5">
