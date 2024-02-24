@@ -3,5 +3,5 @@ import { IPageParams } from '@/types';
 interface IProductsPage extends IPageParams {}
 
 export const ProductsPage = ({ lang }: IProductsPage) => {
-  return <section>ProductsPage</section>;
+  return <section>ProductsPage - {lang}</section>;
 };

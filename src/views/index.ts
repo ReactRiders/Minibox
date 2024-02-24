@@ -1,5 +1,5 @@
+export { CartPage } from './cart';
 export { HomePage } from './home';
-export { AboutPage } from './about';
 export { BasketPage } from './basket';
 export { ProfilePage } from './profile';
 export { ProductsPage } from './products';
