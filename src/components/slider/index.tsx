@@ -13,6 +13,7 @@ interface ISlider {
     tablet?: number;
     mobile?: number;
   };
+  wrapperClass?: string;
   parentClass?: string;
   childClass?: string;
   loop?: boolean;
@@ -32,6 +33,7 @@ export const Slider: FC<ISlider> = (props) => {
     sliderData,
     parentClass = 'py-3',
     childClass = 'px-3',
+    wrapperClass = 'flex flex-col gap-3 mt-3',
     showDots,
   } = props;
 
@@ -54,7 +56,7 @@ export const Slider: FC<ISlider> = (props) => {
   };
 
   return (
-    <div className={`flex flex-col gap-3 mt-3`}>
+    <div className={wrapperClass}>
       {title && <p className={titleClass}>{title}</p>}
       <Carousel
         className={parentClass}

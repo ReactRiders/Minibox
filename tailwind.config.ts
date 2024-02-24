@@ -13,8 +13,9 @@ const config: Config = {
     extend: {
       colors: {
         'muted': '#6C7178',
-        'light-gray': '#F8F8F9',
-        'primary': 'rgb(254, 69, 0)',
+        'light-gray': '#F9FAFB',
+        'dark-gray': '#8E9AAC',
+        'primary': '#FE4500',
         'secondary': '#1D242F',
         'transparent': 'rgba(255, 255, 255, 0)',
         'text-color': '#0B2B5E',

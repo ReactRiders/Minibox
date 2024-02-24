@@ -1,7 +1,8 @@
-import { Fragment, ReactNode } from 'react'
+import { TLocale } from '@/types';
 
-import { Footer, Header } from '../'
-import { TLocale } from '@/types'
+import { Fragment, ReactNode } from 'react';
+
+import { Footer, Header } from '../';
 
 interface IBaseLayout {
   children: ReactNode;
@@ -11,7 +12,7 @@ interface IBaseLayout {
 export const BaseLayout = ({ children, lang }: IBaseLayout) => (
   <Fragment>
     <Header lang={lang} />
-    <main className="container">{children}</main>
+    <main>{children}</main>
     <Footer lang={lang} />
   </Fragment>
-)
+);

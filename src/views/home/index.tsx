@@ -13,14 +13,17 @@ interface IHomePage extends IPageParams {}
 
 export const HomePage = ({ lang }: IHomePage) => {
   return (
-    <>
-      <Slider
-        component={Banner}
-        childClass=""
-        parentClass="rounded-xl overflow-hidden my-6"
-        sliderData={bannerData}
-        items={{ desktop: 1, tablet: 1, mobile: 1 }}
-      />
+    <section className="container">
+      <div className="flex w-full gap-2 items-center">
+        <Slider
+          component={Banner}
+          childClass={''}
+          wrapperClass="w-full flex-1"
+          parentClass="rounded-xl overflow-hidden my-6"
+          sliderData={bannerData}
+          items={{ desktop: 1, tablet: 1, mobile: 1 }}
+        />
+      </div>
       <p className="text-2xl mt-4 mb-6 font-bold">Mahsulotlar kategoriyasi</p>
       <div className="flex gap-3 hide-scroll overflow-x-auto">
         {popularCategoriesData?.map((item, idx) => (
@@ -173,6 +176,6 @@ export const HomePage = ({ lang }: IHomePage) => {
         sliderData={brandData}
         items={{ desktop: 6, tablet: 3, mobile: 2 }}
       />
-    </>
+    </section>
   );
 };

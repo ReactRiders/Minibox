@@ -18,12 +18,12 @@ export const LocaleSwitcher = () => {
   return (
     <Select
       size="sm"
-      className="w-24 p-0 m-0 language-select"
+      className="w-[100px] p-0 m-0 language-select"
       placeholder="Select"
       defaultSelectedKeys={[pathname.split('/')[1]]}
       aria-label="language-select"
       classNames={{
-        trigger: 'p-0 bg-transparent shadow-none hover:bg-transparent',
+        trigger: 'p-0 m-0 bg-transparent shadow-none hover:bg-transparent',
       }}
       style={{ background: 'transparent' }}
     >
@@ -33,7 +33,7 @@ export const LocaleSwitcher = () => {
           value={item.value}
           onClick={() => handleClick(item)}
           style={{ fontSize: '10px' }}
-          className="text-xs p-1 m-0 gap-0"
+          className="p-0 m-0 gap-0"
         >
           {item.label}
         </SelectItem>

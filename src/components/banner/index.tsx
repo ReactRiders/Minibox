@@ -7,12 +7,10 @@ import { Image } from '@nextui-org/react';
 export const Banner: FC<ISlide> = (props) => {
   const { url } = props;
   return (
-    <div className="w-full h-full">
-      <Image
-        className="w-full h-full"
-        src={url}
-        alt="banner-img"
-      />
-    </div>
+    <Image
+      className="w-full h-full rounded-none"
+      src={url}
+      alt="banner-img"
+    />
   );
 };
