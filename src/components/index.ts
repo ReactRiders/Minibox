@@ -10,3 +10,4 @@ export { BaseLayout } from './base-layout';
 export { ProductCard } from './product-card';
 export { LocaleSwitcher } from './locale-switcher';
 export { PopularCategoryCard } from './popular-category-card';
+export { MiniBanner } from './mini-banner';

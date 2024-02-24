@@ -14,11 +14,12 @@ const config: Config = {
       colors: {
         'muted': '#6C7178',
         'light-gray': '#F8F8F9',
-        'primary': '#ffbf33',
+        'primary': 'rgb(254, 69, 0)',
         'secondary': '#1D242F',
         'transparent': 'rgba(255, 255, 255, 0)',
         'text-color': '#0B2B5E',
-        'light-green': 'rgba(79,243,67,0.87)',
+        'light-green': 'rgb(244, 244, 244)',
+        'border-color': 'rgb(232, 236, 239)',
       },
       fontSize: {
         'xs': '0.75rem',
