@@ -33,9 +33,9 @@ export const HomePage = ({ lang }: IHomePage) => {
           />
         ))}
       </div>
-      <div className="flex items-center justify-between mt-14">
+      <div className="flex items-center justify-between mt-20">
         <p className="font-bold text-2xl">Top mahsulotlar</p>
-        <Button>
+        <Button className="bg-light-gray">
           Barchasini Ko'rish{' '}
           <Image
             src={arrow_right.src}
@@ -63,9 +63,9 @@ export const HomePage = ({ lang }: IHomePage) => {
         sliderData={productData}
         items={{ desktop: 5, tablet: 3, mobile: 2 }}
       />
-      <div className="flex items-center justify-between mt-14">
+      <div className="flex items-center justify-between mt-20">
         <p className="font-bold text-2xl">iPhone mahsulotlari</p>
-        <Button>
+        <Button className="bg-light-gray">
           Barchasini Ko'rish{' '}
           <Image
             src={arrow_right.src}
@@ -93,9 +93,9 @@ export const HomePage = ({ lang }: IHomePage) => {
         sliderData={productData}
         items={{ desktop: 5, tablet: 3, mobile: 2 }}
       />
-      <div className="flex items-center justify-between mt-14">
+      <div className="flex items-center justify-between mt-20">
         <p className="font-bold text-2xl">Samsung mahsulotlari</p>
-        <Button>
+        <Button className="bg-light-gray">
           Barchasini Ko'rish{' '}
           <Image
             src={arrow_right.src}
@@ -130,9 +130,9 @@ export const HomePage = ({ lang }: IHomePage) => {
         sliderData={bannerData}
         items={{ desktop: 1, tablet: 1, mobile: 1 }}
       />
-      <div className="flex items-center justify-between mt-14">
+      <div className="flex items-center justify-between mt-20">
         <p className="font-bold text-2xl">Noutbuk mahsulotlari</p>
-        <Button>
+        <Button className="bg-light-gray">
           Barchasini Ko'rish{' '}
           <Image
             src={arrow_right.src}
@@ -160,14 +160,14 @@ export const HomePage = ({ lang }: IHomePage) => {
         sliderData={productData}
         items={{ desktop: 5, tablet: 3, mobile: 2 }}
       />
-      <Slider
-        title="Ommabop brendlar"
-        childClass="px-1.5"
-        titleClass="text-2xl font-bold mt-14"
-        component={BrandCard}
-        sliderData={popularBrandData}
-        items={{ desktop: 6, tablet: 3, mobile: 2 }}
-      />
+      {/*<Slider*/}
+      {/*  title="Ommabop brendlar"*/}
+      {/*  childClass="px-1.5"*/}
+      {/*  titleClass="text-2xl font-bold mt-14"*/}
+      {/*  component={BrandCard}*/}
+      {/*  sliderData={popularBrandData}*/}
+      {/*  items={{ desktop: 6, tablet: 3, mobile: 2 }}*/}
+      {/*/>*/}
       <Slider
         title="Bizning afzalliklarimiz"
         childClass="px-1.5"
