@@ -13,15 +13,7 @@
   }
 
   .container {
-    @apply w-full max-w-[1440px] px-4 mx-auto;
-  }
-
-  .language-select {
-    padding: 0 !important;
-
-    span {
-      @apply text-xs text-muted opacity-70;
-    }
+    @apply w-full max-w-[1470px] px-4 mx-auto;
   }
 
   .hide-scroll::-webkit-scrollbar {

@@ -27,7 +27,6 @@ export const headerData: IHeaderData = {
     { key: 'home', icon: home_icon, url: '/', classes: 'lg:hidden active' },
     { key: 'favourites', icon: heart_icon, url: '/favourites' },
     { key: 'basket', icon: basket_icon, url: '/basket' },
-    { key: 'signIn', icon: user_icon, url: '/profile' },
   ],
 };
 
@@ -35,9 +34,11 @@ export const headerJoinData: IHeaderJoin[] = [
   {
     id: '1',
     icon: telegram,
+    url: 'https://t.me/',
   },
   {
     id: '2',
     icon: instagram,
+    url: 'https://instagram.com/',
   },
 ];

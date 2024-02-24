@@ -3,6 +3,7 @@
 import { HeaderTop } from '@/components/header/header-top';
 import { TopCategories } from '@/components/top-categories';
 import { useLocaleLink } from '@/hooks/locale-link';
+import { enter_icon, search_icon } from '@/mock';
 import { headerData } from '@/mock/header.data';
 import { topCategories } from '@/mock/top-categories.data';
 import { TLocale } from '@/types';
@@ -12,14 +13,13 @@ import { useEffect, useState } from 'react';
 import { Button, Image, Input } from '@nextui-org/react';
 import { useTranslations } from 'next-intl';
 
-import { MenuButton, MobileNav } from '../';
+import { MobileNav } from '../';
 
 interface IHeader {
   lang: TLocale;
 }
 
 export const Header = ({ lang }: IHeader) => {
-  const [isCatalogOpen, setIsCatalogOpen] = useState<boolean>(false);
   const [isFixed, setIsFixed] = useState<boolean>(false);
   const t = useTranslations('header');
   const { LocaleLink } = useLocaleLink();
@@ -42,39 +42,44 @@ export const Header = ({ lang }: IHeader) => {
   }, []);
 
   return (
-    <header className="container">
+    <header>
       <HeaderTop data={headerData.headerTop} />
       <nav className={isFixed ? 'fixed shadow-lg top-0 left-0 w-full z-[1001] bg-white' : ''}>
-        <div className={`${isFixed && 'container'} flex justify-between gap-5 py-3 items-center`}>
-          <div className="flex gap-7 items-center">
-            <LocaleLink href="/">
-              <span className="font-bold text-2xl text-primary">MEGABOX</span>
-            </LocaleLink>
-            <Button
-              color="primary"
-              onClick={() => setIsCatalogOpen((prev) => !prev)}
-              startContent={<MenuButton isActive={isCatalogOpen} />}
-              size="lg"
-            >
-              {t('catalog')}
-            </Button>
-          </div>
-          <div className="flex-1">
+        <div className={`container flex justify-between gap-5 py-3 items-center`}>
+          <LocaleLink href="/">
+            <span className="font-bold text-3xl">MEGABOX</span>
+          </LocaleLink>
+
+          <div className="flex-1 max-w-xl mx-auto">
             <Input
               size="sm"
               type="text"
               placeholder={t('search')}
               variant="bordered"
-              radius="lg"
+              radius="sm"
               classNames={{
-                innerWrapper: 'bg-transparent p-0 shadow-none border-none',
+                innerWrapper: 'bg-transparent overflow-hidden p-0 shadow-none border-none',
                 inputWrapper: 'bg-transparent p-0 shadow-none border',
-                input: 'bg-transparent border-none pl-5 shadow-none',
+                input: 'bg-transparent -ml-2 border-none shadow-none',
               }}
+              startContent={
+                <Button
+                  isIconOnly
+                  size="lg"
+                  radius="sm"
+                  className="bg-transparent"
+                >
+                  <Image
+                    src={search_icon.src}
+                    alt="search"
+                  />
+                </Button>
+              }
               endContent={
                 <Button
-                  color="primary"
+                  className="bg-light-gray text-sm font-semibold"
                   size="lg"
+                  radius="sm"
                 >
                   {t('searching')}
                 </Button>
@@ -82,18 +87,28 @@ export const Header = ({ lang }: IHeader) => {
             />
           </div>
           <ul className="hidden lg:flex gap-4 items-center">
+            <li className="flex items-center gap-3 cursor-pointer">
+              <p className="font-semibold text-sm">{t('enter')}</p>
+              <Image
+                src={enter_icon.src}
+                className="rounded-none w-5 h-5"
+                alt="enter"
+              />
+            </li>
+            <li className="w-px h-10 bg-[#E8ECEF]" />
             {headerData.headerLink.map(({ key, classes, icon, url }, idx) => (
               <li
                 key={idx}
-                className={`flex ${classes} text-sm font-semibold cursor-pointer flex-col gap-1 items-center justify-center`}
+                className={`flex ${classes} w-10 h-10 rounded-full bg-light-gray text-sm font-semibold cursor-pointer flex-col gap-1 items-center justify-center`}
                 onClick={() => (key == 'signIn' ? console.log('Open') : console.log('Close'))}
               >
-                <Image
-                  src={icon.src}
-                  alt={key + ' icon'}
-                  className="w-8"
-                />
-                <LocaleLink href={url as string}>{t(key)}</LocaleLink>
+                <LocaleLink href={url as string}>
+                  <Image
+                    src={icon.src}
+                    alt={key + ' icon'}
+                    className="w-5 h-5 rounded-none"
+                  />
+                </LocaleLink>
               </li>
             ))}
           </ul>

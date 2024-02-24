@@ -1,5 +1,6 @@
 import basket_icon from '@/icons/basket.svg';
 import call_icon from '@/icons/call.svg';
+import enter_icon from '@/icons/enter.svg';
 import facebook from '@/icons/facebook.svg';
 import heart_icon from '@/icons/heart.svg';
 import home_icon from '@/icons/home.svg';
@@ -29,6 +30,7 @@ export {
   user_icon,
   heart_icon,
   phone_icon,
+  enter_icon,
   laptop_icon,
   basket_icon,
   search_icon,
