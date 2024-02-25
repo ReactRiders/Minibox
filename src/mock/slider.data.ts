@@ -1,12 +1,5 @@
 import icons from '@/icons/check-file.svg';
-import {
-  laptop_icon,
-  phone_icon,
-  refrigerator_icon,
-  tv_icon,
-  vacuumCleaner_icon,
-  washingMachine_icon,
-} from '@/mock/index';
+import { change_icon, check_file, delivery, faq, guarantee } from '@/mock/index';
 
 export interface ISlide {
   url: string;
@@ -75,46 +68,29 @@ export const bannerData: ISlide[] = [
 
 export const brandData: ISliderBrands[] = [
   {
-    url: icons,
+    url: check_file,
     title: "Muddatli to'lovga sotib olish",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
+    description: "Biz sizga muddatli to'lov imkoniyatini taklif qilamiz.",
   },
   {
-    url: icons,
-    title: "Butun O'zbekiston bo'ylab doʻkonlar",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
+    url: delivery,
+    title: 'Sifatli yetkazib berish',
+    description: 'Buyurtmangizni ishonchli va xavfsiz yetkazib beriladi.',
   },
   {
-    url: icons,
-    title: "Butun O'zbekiston bo'ylab doʻkonlar",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
+    url: guarantee,
+    title: 'Mahsulot uchun kafolat',
+    description: 'Mahsulot uchun 30 kundan 100 kungacha sifat kafolati.',
   },
   {
-    url: icons,
-    title: "Butun O'zbekiston bo'ylab doʻkonlar",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
+    url: change_icon,
+    title: 'Siz uchun qulayliklar',
+    description: 'Mahsulotda nosozlik bo‘lganda boshqasiga alishtirish imkoni.',
   },
   {
-    url: icons,
-    title: "Butun O'zbekiston bo'ylab doʻkonlar",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
-  },
-  {
-    url: icons,
-    title: "Butun O'zbekiston bo'ylab doʻkonlar",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
-  },
-  {
-    url: icons,
-    title: "Butun O'zbekiston bo'ylab doʻkonlar",
-    description:
-      'Respublika boʻyicha jami 38 ta Mediapark savdo nuqtasi boʻlib, siz oʻzingizga eng yaqin doʻkondan xarid qilishingiz mumkin.',
+    url: faq,
+    title: 'Yordam markazi',
+    description: 'Sizning savollaringizga 24/7 yordam berishga tayyormiz.',
   },
 ];
 

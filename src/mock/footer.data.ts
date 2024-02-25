@@ -1,22 +1,24 @@
+import { anor_bank, click_icon, humo, payme, uzcard, visa } from '@/mock/index';
+
 export const footer_data = [
   {
     title: 'data',
     footerlist: [
-      { listName: 'about', link: '#' },
-      { listName: 'guarantee', link: '#' },
+      { listName: 'delivery_ways', link: '#' },
       { listName: 'actions', link: '#' },
-      { listName: 'our_stores', link: '#' },
+      { listName: 'give-back', link: '#' },
+      { listName: 'help', link: '#' },
     ],
   },
 ];
 
 export const paymentMethod = [
-  { paymentImg: '	https://mediapark.uz/images/humo.svg', link: '#' },
-  { paymentImg: 'https://mediapark.uz/svg/click.svg', link: '#' },
-  { paymentImg: 'https://mediapark.uz/images/uzcard.svg', link: '#' },
-  { paymentImg: 'https://mediapark.uz/svg/payme.svg', link: '#' },
-  { paymentImg: 'https://mediapark.uz/images/visa.svg', link: '#' },
-  { paymentImg: 'https://mediapark.uz/images/mastercard.svg', link: '#' },
+  { paymentImg: anor_bank, link: '#' },
+  { paymentImg: payme, link: '#' },
+  { paymentImg: click_icon, link: '#' },
+  { paymentImg: humo, link: '#' },
+  { paymentImg: uzcard, link: '#' },
+  { paymentImg: visa, link: '#' },
 ];
 
 export const application_link = [

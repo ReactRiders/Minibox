@@ -190,7 +190,7 @@ export const HomePage = ({ lang }: IHomePage) => {
         titleClass="text-2xl font-bold mt-14"
         component={BrandCard}
         sliderData={brandData}
-        items={{ desktop: 6, tablet: 3, mobile: 2 }}
+        items={{ desktop: 5, tablet: 3, mobile: 2 }}
       />
     </section>
   );

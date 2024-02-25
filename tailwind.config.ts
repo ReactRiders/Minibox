@@ -21,6 +21,8 @@ const config: Config = {
         'text-color': '#0B2B5E',
         'light-green': 'rgb(244, 244, 244)',
         'border-color': 'rgb(232, 236, 239)',
+        'dark-blue': 'rgb(7, 33, 52)',
+        'light-blue': '#154060',
       },
       fontSize: {
         'xs': '0.75rem',

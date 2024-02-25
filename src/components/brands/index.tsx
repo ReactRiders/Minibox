@@ -6,7 +6,7 @@ import { Image } from '@nextui-org/react';
 
 export const BrandCard: FC<ISliderBrands> = ({ url, title, description }) => {
   return (
-    <div className="rounded-xl border p-5 flex items-center justify-center flex-col">
+    <div className="rounded-xl border p-5 flex items-center justify-center flex-col h-">
       <Image
         alt="NextUI Fruit Image with Zoom"
         src={url.src}
